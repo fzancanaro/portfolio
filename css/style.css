@@ -22,3 +22,12 @@
 @media (min-width: 991px) {
   .name .fa {
     font-size: 25px; } }
+
+.alert{
+   text-align: center;
+   padding:10px;
+   background:#79c879;
+   color:#fff;
+   margin-bottom:10px;
+   display:none;
+    }

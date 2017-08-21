@@ -204,13 +204,14 @@
       <div class="card card-block py-5">
         <h3>Get In Touch</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, inventore atque dolore blanditiis sit repudiandae!</p>
-        <form>
+        <form id="contactForm">
+             <div class="alert">Your message has been sent</div>
           <div class="form-group">
             <div class="input-group input-group-lg">
               <span class="input-group-addon bg-danger text-white">
                 <i class="fa fa-user"></i>
               </span>
-              <input type="text" class="form-control bg-inverse text-white" placeholder="Name">
+              <input type="text" class="form-control bg-inverse text-white" placeholder="Name" name="name" id="name" required>
             </div>
           </div>
 
@@ -219,16 +220,16 @@
               <span class="input-group-addon bg-danger text-white">
                 <i class="fa fa-envelope"></i>
               </span>
-              <input type="email" class="form-control bg-inverse text-white" placeholder="Email">
+                <input type="email" class="form-control bg-inverse text-white" placeholder="Email" name="email" id="email" required>
             </div>
           </div>
-
+          </div>
           <div class="form-group">
             <div class="input-group input-group-lg">
               <span class="input-group-addon bg-danger text-white">
                 <i class="fa fa-pencil"></i>
               </span>
-              <textarea rows="5" class="form-control bg-inverse text-white" placeholder="Message"></textarea>
+              <textarea rows="5" class="form-control bg-inverse text-white" placeholder="Message" id="message" required></textarea>
             </div>
           </div>
           <input type="submit" class="btn btn-danger btn-block btn-lg" value="Submit">
@@ -245,6 +246,8 @@
     </footer>
   </div>
 
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
