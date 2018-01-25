@@ -104,6 +104,11 @@ audio:not([controls]) {
 img {
   border-style: none; }
 
+img-fluid {
+    max-width: 100%;
+    height: auto; }
+
+
 svg:not(:root) {
   overflow: hidden; }
 
@@ -2880,9 +2885,16 @@ tbody.collapse.show {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
   background-color: #fff;
+  background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem; }
 
 .card-block {
   flex: 1 1 auto;
@@ -3021,7 +3033,8 @@ tbody.collapse.show {
   border-left: 0; }
 
 .card-img {
-  border-radius: calc(0.25rem - 1px); }
+  border-radius: calc(0.25rem - 1px);}
+
 
 .card-img-overlay {
   position: absolute;
@@ -3032,10 +3045,12 @@ tbody.collapse.show {
   padding: 1.25rem; }
 
 .card-img-top {
+  width: 100%;
   border-top-right-radius: calc(0.25rem - 1px);
   border-top-left-radius: calc(0.25rem - 1px); }
 
 .card-img-bottom {
+    width: 100%;
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px); }
 
@@ -5986,3 +6001,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+    section {
+    	h2 {
+    		margin-bottom: .4em;
+    	}
+    }
