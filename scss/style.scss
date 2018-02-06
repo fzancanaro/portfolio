@@ -1,4 +1,4 @@
-.bg-dark{
+.bg-black{
   background:#000;
   color:#fff;
 }
@@ -11,7 +11,6 @@
 
   .port-item{
     width:30%;
-
     .fa{
       font-size:2em;
     }
@@ -26,13 +25,5 @@
 @media(min-width:1199px){
   .port-item{
     padding:3em !important;
-  }
-}
-
-@media(min-width:991px){
-  .name{
-    .fa{
-      font-size:25px;
-    }
   }
 }
